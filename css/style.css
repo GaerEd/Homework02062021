@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.container {
+  max-height: 750px;
+  background: linear-gradient(to right, #F9FDFF 55%, #FCEAE8 45%);
+}
