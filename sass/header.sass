@@ -6,18 +6,20 @@
 
 html, body
     height: 100%
+    font-family: sans-serif
 
-.container
+
+.container 
     max-width: 1170px
-    max-height: 750px
-    background: linear-gradient(to right, #F9FDFF 55%, #FCEAE8 45%)
+    margin: 0 auto
+    padding: 0 10px
 
-.header 
+.header
     position: fixed
     width: 100%
     top: 0
     left: 0
-    z-index: 5
+    z-index: 50
 
 .header::before
     content: ''
@@ -26,7 +28,6 @@ html, body
     left: 0
     width: 100%
     height: 100%
-    background-color: #303032
 
 .header__body 
     position: relative
@@ -37,19 +38,39 @@ html, body
     align-items: center
 
 .header__logo 
-.header__burger 
-.header__menu 
-.header__list
-.header__list 
-    li
-        color: #FFFFFF
-        text-transform: uppercase
-        font-familypx: Open Sans, sans-serif
-        font-size: 18px
-        line-height: 25px
-        text-align: center 
+    flex: 0 0 60px
 
+.header__logo
+    & img
+        max-width: 100%
+
+
+.header__burger 
+    display: none
+    
+.header__menu 
+.header__list 
+    display: flex
+
+.header__list 
+    & li
+        list-style: none
+        margin: 0 0 0 60px
+
+.header__btn
+    display: flex
+    & button
+        cursor: pointer
+        margin-left: 25px
+        
+                 
 .header__link 
+    color: #303032
+    font-family: Open Sans 
+    text-transform: uppercase
+    font-size: 14px
+    line-height: 19px
+    text-decoration: none
 
 // Слайдер 
     /* Слайдер */

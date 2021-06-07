@@ -3,19 +3,18 @@
   padding: 0;
   margin: 0;
   border: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html, body {
   height: 100%;
+  font-family: sans-serif;
 }
 
 .container {
   max-width: 1170px;
-  max-height: 750px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(55%, #F9FDFF), color-stop(45%, #FCEAE8));
-  background: linear-gradient(to right, #F9FDFF 55%, #FCEAE8 45%);
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .header {
@@ -23,7 +22,7 @@ html, body {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 50;
 }
 
 .header::before {
@@ -33,31 +32,54 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #303032;
 }
 
 .header__body {
   position: relative;
   z-index: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   height: 65px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+}
+
+.header__logo {
+  flex: 0 0 60px;
+}
+
+.header__logo img {
+  max-width: 100%;
+}
+
+.header__burger {
+  display: none;
+}
+
+.header__list {
+  display: flex;
 }
 
 .header__list li {
-  color: #FFFFFF;
+  list-style: none;
+  margin: 0 0 0 60px;
+}
+
+.header__btn {
+  display: flex;
+}
+
+.header__btn button {
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+.header__link {
+  color: #303032;
+  font-family: Open Sans;
   text-transform: uppercase;
-  font-familypx: Open Sans, sans-serif;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration: none;
 }
 
 /* Слайдер запущен */
