@@ -1,0 +1,32 @@
+.new {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.new__block {
+  max-width: 570px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+.block__small {
+  width: 270px;
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-evenly;
+}
+
+.text {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+}
