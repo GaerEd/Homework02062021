@@ -16,7 +16,8 @@
 }
 
 .block__small {
-  width: 270px;
+  max-width: 270px;
+  min-height: 289px;
   background-color: red;
   display: flex;
   flex-wrap: wrap;
