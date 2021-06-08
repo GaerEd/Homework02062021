@@ -17,11 +17,11 @@
 
 .block__small {
   max-width: 270px;
-  min-height: 289px;
+  height: 289px;
   background-color: red;
   display: flex;
   flex-wrap: wrap;
-  align-content: space-between;
+  align-content: center;
   justify-content: space-evenly;
 }
 
