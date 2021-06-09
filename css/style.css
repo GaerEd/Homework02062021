@@ -60,6 +60,8 @@ html, body {
 
 .header__list {
   display: flex;
+  position: relative;
+  z-index: 2;
 }
 
 .header__list li {
@@ -105,47 +107,12 @@ html, body {
 /* Точки (булиты) */
 /* Активная точка */
 /* Элемент точки */
-.new {
-  max-width: 1170px;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.new__block {
-  max-width: 570px;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-  justify-content: space-between;
-}
-
-.block__small {
-  max-width: 270px;
-  height: 289px;
-  background-color: red;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-evenly;
-}
-
-.block__small p, .block__small .price {
-  display: block;
-}
-
-.text {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: flex-start;
-}
-
 @media (max-width: 767px) {
   .header__body {
     height: 50px;
+  }
+  .header__logo {
+    flex: 0 0 40px;
   }
   .header__burger {
     display: block;
@@ -183,5 +150,50 @@ html, body {
     height: 100%;
     background-color: #8181b1;
     z-index: 3;
+    padding: 120px;
   }
+  .header__list {
+    display: block;
+  }
+  .header__list li {
+    margin: 0 0 65px 0;
+  }
+}
+
+.new {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.new__block {
+  max-width: 570px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+.block__small {
+  max-width: 270px;
+  height: 289px;
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.block__small p, .block__small .price {
+  display: block;
+}
+
+.text {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
 }

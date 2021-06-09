@@ -53,8 +53,11 @@ html, body
     display: none
     
 .header__menu 
+
 .header__list 
     display: flex
+    position: relative
+    z-index: 2
 
 .header__list 
     & li
@@ -115,3 +118,52 @@ html, body
 /* Элемент точки */
 .slick-dots li button
 //================================================================================================
+
+@media (max-width: 767px)
+    .header__body
+        height: 50px
+
+    .header__logo
+        flex: 0 0 40px
+
+    .header__burger 
+        display: block
+        position: relative
+        width: 30px
+        height: 20px 
+        z-index: 3
+        & span
+            position: absolute
+            background-color: #fff
+            width: 100%
+            height: 2px
+            top: 9px
+
+    .header__burger::before, .header__burger::after
+        content: ''
+        background-color: #fff
+        position: absolute
+        width: 100%
+        height: 2px
+        left: 0
+
+    .header__burger::before
+        top: 0
+
+    .header__burger::after
+        bottom: 0
+
+    .header__menu
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: #8181b1
+        z-index: 3
+        padding: 120px
+
+    .header__list   
+        display: block
+        & li
+            margin: 0 0 65px 0
