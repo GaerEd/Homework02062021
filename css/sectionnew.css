@@ -25,6 +25,10 @@
   justify-content: space-evenly;
 }
 
+.block__small p, .block__small .price {
+  display: block;
+}
+
 .text {
   display: flex;
   flex-wrap: wrap;
