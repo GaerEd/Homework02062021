@@ -13,7 +13,14 @@ $(document).ready(function(){
 		dots:true,
 		adaptiveHeight:true,
 		speed:1000,
-	})
+	});
+	$('.chance__slider').slick({
+		arrows:false,
+		dots:false,
+		adaptiveHeigt:true,
+		speed:1000,
+		slidesToShow:5,
+	});
 })
 $(document).ready(function(){
 	$('.slider').slick({
