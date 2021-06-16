@@ -1,5 +1,5 @@
 .chance
-    max-width: 1170px
+    width: 1170px
     margin: 0 auto
     position: relative
     margin-bottom: 110px
@@ -52,6 +52,33 @@
             height: 355px
             margin: 15px
             cursor: pointer
+            & .name
+                position: absolute
+                top: 5%
+                left: 5%
+                font-family: Open Sans
+                font-size: 16px
+                line-height: 22px
+                color: #000000
+            & .price
+                position: absolute
+                top: 10%
+                left: 5%
+                font-family: Open Sans
+                font-weight: 600
+                font-size: 28px
+                line-height: 38px
+                color: #303032
+                & span
+                    font-weight: 600
+                    font-size: 16px
+                    line-height: 22px
+                    text-decoration-line: line-through
+                    color: #979798
+            & img
+                position: absolute
+                bottom: 0
+                right: 0
             & button
                 position: absolute
                 visibility: hidden

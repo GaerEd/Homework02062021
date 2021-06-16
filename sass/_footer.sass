@@ -1,0 +1,59 @@
+footer
+    width: 1170px
+    height: 70px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    position: relative
+    margin-bottom: 10px
+    &::after
+        position: absolute
+        bottom: 0
+        content: ''
+        width: 1170px
+        height: 2px
+        border: 1px solid rgba(0, 0, 0, 0.2)
+        transform: matrix(1, 0, 0, 1, 0, 0)
+    & .footer__logo
+        margin-bottom: 31px
+    & .footer__btn
+        & button 
+            position: relative
+            font-family: Roboto
+            font-size: 16px
+            line-height: 19px
+            color: #303032
+            margin: 32px 60px 30px 10px
+            background: transparent
+            cursor: pointer
+            & img
+                position: absolute
+                left: -20px
+    & .footer__info
+        & .info__itm
+            font-family: Avenir Next Cyr
+            font-weight: 600
+            font-size: 14px
+            line-height: 22px
+            text-align: center
+            color: #303032
+            text-transform: uppercase
+            text-decoration: none
+            margin-left: 60px
+            &:hover
+                color: #151516
+                text-decoration: underline
+
+.signature
+    width: 1170px
+    margin: 0 auto
+    & .web
+        margin-top: 50px
+        margin-bottom: 10px
+        font-family: Avenir Next Cyr
+        font-size: 10px
+        line-height: 15px
+        text-align: center
+        color: #000000
+        float: right
