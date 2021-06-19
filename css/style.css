@@ -76,11 +76,17 @@ html, body {
 .header__btn {
   display: flex;
   z-index: 2;
+  margin-left: 40%;
 }
 
 .header__btn button {
   cursor: pointer;
   margin-left: 25px;
+}
+
+.header__btn button img {
+  width: 24px;
+  background: transparent;
 }
 
 .header__link {
@@ -103,11 +109,17 @@ html, body {
   .header__body {
     height: 50px;
   }
+  .header__body .header__btn {
+    display: flex;
+    z-index: 2;
+    margin-left: 75%;
+  }
   .header__body.active {
     z-index: 2;
     background-color: #313133;
   }
   .header__logo {
+    width: 24px;
     flex: 0 0 40px;
   }
   .header__burger {
@@ -262,11 +274,11 @@ html, body {
   font-size: 0;
 }
 
-.slider .slider-arrow.slick-prev {
+.slider .slick-arrow .slick-prev {
   left: 0;
 }
 
-.slider .slider-arrow.slick-next {
+.slider .slick-arrow .slick-next {
   right: 0;
 }
 
@@ -288,7 +300,7 @@ html, body {
   background-color: transparent;
 }
 
-.slider .slick-dots li.slick-active {
+.slider .slick-dots li .slick-active {
   position: relative;
   font-family: Playfair Display;
   font-size: 40px;
@@ -297,7 +309,7 @@ html, body {
   color: #000000;
 }
 
-.slider .slick-dots li.slick-active::after {
+.slider .slick-dots li .slick-active::after {
   position: absolute;
   content: '';
   width: 0;
@@ -308,7 +320,7 @@ html, body {
   left: 25px;
 }
 
-.slider__item {
+.slider .slider__item {
   display: flex;
   justify-content: space-around;
   align-items: center;

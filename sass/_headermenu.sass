@@ -64,9 +64,13 @@ html, body
 .header__btn
     display: flex
     z-index: 2
+    margin-left: 40%
     & button
         cursor: pointer
         margin-left: 25px
+        & img
+            width: 24px
+            background: transparent
 
 
 .header__link 
@@ -86,12 +90,17 @@ html, body
 
     .header__body
         height: 50px
+        & .header__btn
+            display: flex
+            z-index: 2
+            margin-left: 75%
 
     .header__body.active
         z-index: 2
         background-color: #313133
 
     .header__logo
+        width: 24px
         flex: 0 0 40px
 
     .header__burger 

@@ -49,43 +49,39 @@
         top: 50%
         z-index: 10
         font-size: 0
-
-.slider .slider-arrow.slick-prev
-    left: 0
-
-.slider .slider-arrow.slick-next
-    right: 0
-
-.slider .slick-dots
-    display: block
-    & li
-        list-style: none
-        font-family: Playfair Display
-        font-size: 20px
-        line-height: 145%
-        letter-spacing: 0.05em
-        color: rgba(0, 0, 0, 0.3)
-        margin: 20px
-        & button
-            background-color:  transparent
-    & li.slick-active
-        position: relative
-        font-family: Playfair Display
-        font-size: 40px
-        line-height: 145%
-        letter-spacing: 0.05em
-        color: #000000
-    & li.slick-active::after
-        position: absolute
-        content: ''
-        width: 0
-        height: 54px
-        background-color: #000000
-        border: 2px solid #000000
-        top: 15%
-        left: 25px
-
-.slider__item
-    display: flex
-    justify-content: space-around
-    align-items: center
+        & .slick-prev
+            left: 0
+        & .slick-next
+            right: 0
+    & .slick-dots
+        display: block
+        & li
+            list-style: none
+            font-family: Playfair Display
+            font-size: 20px
+            line-height: 145%
+            letter-spacing: 0.05em
+            color: rgba(0, 0, 0, 0.3)
+            margin: 20px
+            & button
+                background-color:  transparent
+            & .slick-active
+                position: relative
+                font-family: Playfair Display
+                font-size: 40px
+                line-height: 145%
+                letter-spacing: 0.05em
+                color: #000000
+            & .slick-active::after
+                position: absolute
+                content: ''
+                width: 0
+                height: 54px
+                background-color: #000000
+                border: 2px solid #000000
+                top: 15%
+                left: 25px
+    .slider__item
+        display: flex
+        justify-content: space-around
+        align-items: center
