@@ -19,7 +19,6 @@ $(document).ready(function(){
 		dots:false,
 		adaptiveHeigt:true,
 		speed:1000,
-		slidesToShow:5,
 	});
 })
 $(document).ready(function(){

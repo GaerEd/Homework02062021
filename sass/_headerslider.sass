@@ -64,24 +64,34 @@
             color: rgba(0, 0, 0, 0.3)
             margin: 20px
             & button
+                cursor: pointer
                 background-color:  transparent
-            & .slick-active
-                position: relative
-                font-family: Playfair Display
-                font-size: 40px
-                line-height: 145%
-                letter-spacing: 0.05em
-                color: #000000
-            & .slick-active::after
-                position: absolute
-                content: ''
-                width: 0
-                height: 54px
-                background-color: #000000
-                border: 2px solid #000000
-                top: 15%
-                left: 25px
+        & .slick-active
+            position: relative
+            font-family: Playfair Display
+            font-size: 40px
+            line-height: 145%
+            letter-spacing: 0.05em
+            color: #000000
+        & .slick-active::after
+            position: absolute
+            content: ''
+            width: 0
+            height: 54px
+            background-color: #000000
+            border: 2px solid #000000
+            top: 15%
+            left: 25px
     .slider__item
         display: flex
         justify-content: space-around
         align-items: center
+        & .header__btn
+            margin: 35px 0
+            padding: 18px 80px
+            background: #303032
+            font-family: Open Sans
+            font-size: 16px
+            line-height: 22px
+            text-transform: uppercase
+            color: #FFFFFF
