@@ -605,7 +605,7 @@ html, body {
 }
 
 .chance {
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
   position: relative;
   margin-bottom: 110px;
@@ -756,6 +756,19 @@ html, body {
   min-height: 430px;
 }
 
+@media screen and (max-width: 768px) {
+  .chance {
+    max-width: 768px;
+  }
+  .chance .chance__line {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .chance .chance__slider .slick-list {
+    max-width: 670px;
+  }
+}
+
 footer {
   width: 1170px;
   height: 70px;
@@ -828,4 +841,30 @@ footer .footer__info .info__itm:hover {
   text-align: center;
   color: #000000;
   float: right;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    width: 768px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-content: space-around;
+  }
+  .signature {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .signature .web {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: Avenir Next Cyr;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+    color: #000000;
+    float: right;
+  }
 }
